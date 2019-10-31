@@ -46,9 +46,7 @@ class logistic_regression:
         self.X = X 
         self.y_actual = y_actual 
         self.alpha = alpha 
-        self.max_iter = max_iter
-#        self.threshold = threshold
-        
+        self.max_iter = max_iter        
     
     def sigmoid(self, z): 
     	return 1/(1+np.exp(-z))
@@ -90,14 +88,7 @@ class logistic_regression:
         theta = self.gradient_descent()
         return [1 if i >= threshold else 0 for i in self.predictor(theta,X1)]
 
-#gradient_descent(SBf_test,SBr_test,0.1,10)
-#print(classify(SBf_test,SBr_test,0.1,10,0.5))
-#gradient_descent(SBf_test,SBr_test,0.1,50)
-#print(classify(SBf_test,SBr_test,0.1,10,0.5))
-#gradient_descent(SBf_test,SBr_test,0.1,100)
-#print(classify(SBf_test,SBr_test,0.1,100,0.5))
 
 log_reg = logistic_regression(SBf_test,SBr_test,0.1,100)
-#log_reg.gradient_descent()
 print(log_reg.classify())
 
