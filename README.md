@@ -1,4 +1,4 @@
-# gradient-descent-for-logistic-regression
+# Gradient-Descent-for-Logistic-Regression
 An implementation of gradient descent for binary logistic regression.  
 
 The implementation uses the Spambase dataset provided by UC Irvine's Machine Learning Repository.  Spambase contains over 5000 data points regarding SPAM (i.e., "junk") and HAM emails, which are characterized by 57 feature columns and a 58th response column denoting emails as either 1 (for SPAM) or 0 (for HAM).  
